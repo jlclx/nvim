@@ -20,4 +20,7 @@ map("n", "<leader>gn", gitsigns.next_hunk, { desc = "GitSigns Next Hunk" })
 map("n", "<leader>gp", gitsigns.prev_hunk, { desc = "GitSigns Prev Hunk" })
 map("n", "<leader>gd", gitsigns.diffthis, { desc = "GitSigns Diff This" })
 
+local conform = require('conform')
+map("n", "<leader>,", conform.format, { desc = "Conform Format" })
+
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
